@@ -1,1 +1,27 @@
-Hello
+<!doctype html>
+<html>
+	<head>
+		<title>Introduction with UI5</title>
+		<script>
+			function Display(){
+				var firstname, lastname, fullname;
+				firstname = document.getElementById("Input1").value;
+				lastname = document.getElementById("Input2").value;
+				fullname = firstname +" "+ lastname;
+				 document.getElementById("Para1").innerHTML = fullname;
+				 alert(fullname);
+			}
+		</script>
+	</head>
+	<Body>
+		<h1 >Welcome to the UI5 Training</h1>
+		<label>First Name</label>
+		<Input id="Input1"/>
+		<br>
+		<label>Last Name</label>
+       <Input id="Input2"/>
+       <br>
+       <Button onClick="Display()">Submit</Button>
+       <h1 id="Para1"> </h1>
+</Body>
+</html>
